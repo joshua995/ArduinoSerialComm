@@ -28,7 +28,7 @@ void setup() {
 
 void loop() {
   Serial.println("Photoresistor: " + String(analogRead(photoresistor)) + " " + message);
-  if(analogRead(photoresistor) <= 20g){
+  if(analogRead(photoresistor) <= 20){
     digitalWrite(greenL, HIGH);
     isGreenOn = true;
     digitalWrite(redL, HIGH);
